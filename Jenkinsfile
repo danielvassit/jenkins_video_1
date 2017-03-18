@@ -8,7 +8,7 @@ pipeline {
             
             tools { maven "maven3.3.9" }
             steps {
-                sh "echo mvn -v"
+                sh "mvn -v"
                 sh "echo First"
             }
         }
@@ -16,7 +16,7 @@ pipeline {
             
             tools { maven "maven3.3.3" }
             steps {
-                sh "echo mvn -v"
+                sh "mvn -v"
                 sh "echo Second"
             }
         }
