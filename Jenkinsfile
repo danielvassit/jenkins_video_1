@@ -5,17 +5,17 @@ pipeline {
     stages {
         
         stage ("First") {
-            step {
+            steps {
                 
             }
         }
         stage ("Second") {
-            step {
+            steps {
                 
             }
         }
         stage ("Third") {
-            step {
+            steps {
                 
             }
         }
