@@ -1,6 +1,8 @@
 pipeline {
     
-    FOO="BAR"
+    environment {
+        FOO="BAR"
+    }
     
     agent any
     
