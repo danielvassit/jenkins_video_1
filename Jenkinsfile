@@ -35,10 +35,10 @@ pipeline {
                 parallel (
                     one: {
                         echo 1
-                    }
+                    },
                     two: {
                         echo 2
-                    }
+                    },
                     three: {
                         echo 3
                     }
