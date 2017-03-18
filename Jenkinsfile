@@ -32,7 +32,7 @@ pipeline {
         }
         stage ("Third") {
             steps {
-                parallel {
+                parallel (
                     one: {
                         sh "echo 1"
                     }
@@ -42,6 +42,7 @@ pipeline {
                     three: {
                         sh "echo 3"
                     }
+                )
                 }
             }
         }
