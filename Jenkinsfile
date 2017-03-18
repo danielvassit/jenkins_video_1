@@ -2,6 +2,9 @@ pipeline {
     
     agent any 
     
+    environment {
+        FOO="BAR"
+    }
     
     stages {
         stage ("First") {
@@ -9,6 +12,11 @@ pipeline {
             steps {
                 sh "mvn -v"
                 sh "echo first"
+            }
+            post {
+                always {
+                    sh "echo $FOO"   
+                }
             }
         }
         
