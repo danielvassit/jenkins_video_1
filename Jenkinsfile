@@ -18,7 +18,7 @@ pipeline {
             
             post {
                 always {
-                    sh "echo $BAR" 
+                    sh "echo $FOO" 
                 }
             }
         }
