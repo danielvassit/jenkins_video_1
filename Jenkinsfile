@@ -34,13 +34,13 @@ pipeline {
             steps {
                 parallel (
                     one: {
-                        sh "echo 1"
+                        echo 1
                     }
                     two: {
-                        sh "echo 2"
+                        echo 2
                     }
                     three: {
-                        sh "echo 3"
+                        echo 3
                     }
                 )
                 }
